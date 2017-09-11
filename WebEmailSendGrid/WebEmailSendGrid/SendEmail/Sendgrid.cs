@@ -12,7 +12,7 @@ namespace WebEmailSendGrid.SendEmail
     {
        public  async Task Execute()
         {
-            var apiKey = Environment.GetEnvironmentVariable("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");
+            var apiKey = Environment.GetEnvironmentVariable("[You-Key]");
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("mcordovat@soenperu.com", "marlo");
             var subject = "Sending with SendGrid is Fun";
